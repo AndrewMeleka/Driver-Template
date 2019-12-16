@@ -1,0 +1,56 @@
+//-generate text, paragraph, anchor the ( main box )
+mixin mainBox(title,paragraph,span,btnText,btnStyle,btnHref)
+    .mainBox.text-center
+        h2 #{title}
+        p #{paragraph}
+            span #{span}
+        a(href=btnHref, class="btn " + btnStyle) #{btnText}
+
+
+//-features
+mixin fetaBox(iconSvg,theTitle,theParagraph)
+    .col-sm-12.col-md-3
+        .fetaBox.text-center
+            .magicDropBox
+                img(src="images/icons/"+ iconSvg, width="60px", alt="brand")
+            .fetaText
+                h4 #{theTitle}
+                p #{theParagraph}
+
+
+mixin formInputsGenerate(typeInput, inputID, textLabel)
+    .form-group.col-md-6
+        label(for=inputID) #{textLabel}
+        input(type=typeInput class="form-control" id=inputID required)
+
+
+mixin theEndFooter()
+    footer#theEnd
+        .container
+            .row
+                .col-sm-12.col-md-4.addInfo
+                    .logo
+                        h3 #{title.toUpperCase()}
+
+                .col-sm-12.col-md-4.addInfo
+                    .address
+                        p #{title}, 2310 First Street,
+                            br
+                            fort myers, fl 33901
+
+                .col-sm-12.col-md-4.addInfo
+                    .socialBtns
+                        a(href="#")
+                            li(class="fab fa-facebook-f")
+                        a(href="#")
+                            li(class="fab fa-twitter")
+                        a(href="#")
+                            li(class="fab fa-instagram")
+                        a( href="#")
+                            li(class="fab fa-linkedin")
+                        a(href="#")
+                            li(class="fab fa-google-plus-g")
+
+                .col-sm-12.col-md-12
+                    .rights.text-center
+                        p &copy; Andrew Nageh all rights reserved

@@ -1,0 +1,37 @@
+footer#theEnd{
+  background-color: $offBlack;
+  width: 100%;
+  padding: 10% 0 2% 0;
+
+  h3,p{
+    color: $white !important;
+  }
+  p{
+    text-transform: capitalize;
+  }
+
+  .socialBtns{
+    color: $white;
+    >a{
+      margin-right: 5%;
+    }
+  }
+  .rights{
+    margin-top: 10%;
+    p{
+      color: $whBl !important;
+    }
+  }
+}
+
+@media (min-width: 320px) and (max-width: 800px) {
+  footer#theEnd{
+    text-align: center !important;
+    .row{
+      >.addInfo{
+        margin-bottom: 10px;
+      }
+    }
+  }
+}
+

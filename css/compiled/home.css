@@ -1,0 +1,226 @@
+body {
+  font-family: 'Lato', sans-serif; }
+
+a,
+.nav-link {
+  color: #FFFFFF;
+  transition: all .3s linear;
+  font-size: 16px !important; }
+  a:hover,
+  .nav-link:hover {
+    text-decoration: none;
+    color: #ffc107; }
+
+.btn {
+  width: 180px;
+  text-transform: uppercase;
+  padding: 7px 10px;
+  border-radius: 0;
+  font-weight: bold;
+  border-width: 2.2px;
+  font-size: 14px !important; }
+  .btn i {
+    margin-left: 20px; }
+
+.btn-outline-warning {
+  color: #ffc107 !important; }
+  .btn-outline-warning:hover {
+    color: #000000 !important; }
+
+.btn-outline-dark {
+  color: #000000 !important; }
+  .btn-outline-dark:hover {
+    color: #ffc107 !important; }
+
+p {
+  color: #333333 !important;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+  font-size: 16px; }
+
+input:focus,
+input:active {
+  border-color: #ffc107 !important;
+  box-shadow: 0 0 0 0.2rem #ffc107a1 !important; }
+
+label {
+  text-transform: uppercase; }
+
+.d-overlay {
+  background-color: #000000;
+  position: absolute;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  opacity: .4; }
+
+.mainBox h2 {
+  text-transform: capitalize;
+  font-weight: bold; }
+.mainBox p {
+  margin-bottom: 30px; }
+  .mainBox p span {
+    text-transform: capitalize; }
+
+.magicDropBox {
+  height: 126px;
+  box-shadow: -2px 3px 7px 0px #ccc;
+  padding: 30px;
+  transition: all .4s ease-in;
+  border-radius: 5px; }
+  .magicDropBox:hover {
+    box-shadow: -2px 3px 7px 0px #989898; }
+
+.theMagicMargin {
+  margin: 10% 0; }
+
+#d-header {
+  position: relative;
+  width: 100%;
+  height: 700px;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  color: #FFFFFF; }
+
+#d-intro {
+  position: relative;
+  z-index: 9999;
+  height: 90%;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-content: center;
+  align-items: center; }
+  #d-intro .boxText {
+    text-transform: capitalize; }
+
+#theNav {
+  color: #FFFFFF;
+  background-color: #000000;
+  z-index: 999999; }
+  #theNav .navbar-brand {
+    font-size: 20px;
+    color: #FFFFFF !important; }
+  #theNav .fa-bars {
+    color: #FFFFFF; }
+  #theNav ul {
+    list-style: none;
+    padding-left: 40px;
+    padding-top: 10px;
+    padding-bottom: 5px; }
+    #theNav ul > li {
+      text-transform: capitalize;
+      margin-right: 20px; }
+    #theNav ul > .active a {
+      text-decoration: none;
+      font-weight: bold;
+      color: #ffc107; }
+
+.boxBtns > a {
+  margin-left: 20px; }
+
+#d-header {
+  background-image: url("../../images/backgrounds/bg-3.jpg") !important; }
+
+.fetaBox {
+  margin-top: 80px; }
+
+.fetaText {
+  margin-top: 40px; }
+  .fetaText h4 {
+    font-weight: bold;
+    text-transform: capitalize; }
+
+#theDriver {
+  background-color: #ffc107;
+  height: 500px;
+  margin-bottom: 0;
+  position: relative;
+  z-index: 99999; }
+  #theDriver .mainBox {
+    color: #FFFFFF !important;
+    padding: 5% 0; }
+    #theDriver .mainBox p {
+      color: #F6F6F6 !important; }
+  #theDriver .imgCar > img {
+    width: 450px; }
+
+section#contact {
+  position: relative;
+  background-image: url("../../images/backgrounds/contact.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-attachment: fixed;
+  padding: 10% 0; }
+  section#contact label {
+    color: #FFFFFF !important; }
+  section#contact .d-overlay {
+    opacity: .5; }
+  section#contact .form-row > .col, section#contact .form-row > [class*=col-] {
+    padding-right: 20px;
+    padding-left: 20px; }
+
+.d-content-contact {
+  position: relative;
+  z-index: 99999; }
+
+.textContact {
+  margin-bottom: 5%; }
+  .textContact h2 {
+    text-transform: capitalize;
+    color: #FFFFFF; }
+
+.btnForm {
+  margin-top: 10%; }
+
+footer#theEnd {
+  background-color: #333333;
+  width: 100%;
+  padding: 10% 0 2% 0; }
+  footer#theEnd h3, footer#theEnd p {
+    color: #FFFFFF !important; }
+  footer#theEnd p {
+    text-transform: capitalize; }
+  footer#theEnd .socialBtns {
+    color: #FFFFFF; }
+    footer#theEnd .socialBtns > a {
+      margin-right: 5%; }
+  footer#theEnd .rights {
+    margin-top: 10%; }
+    footer#theEnd .rights p {
+      color: #757575 !important; }
+
+@media (min-width: 320px) and (max-width: 800px) {
+  footer#theEnd {
+    text-align: center !important; }
+    footer#theEnd .row > .addInfo {
+      margin-bottom: 10px; } }
+@media (min-width: 481px) and (max-width: 767px) {
+  #d-header {
+    height: 370px !important; }
+
+  .boxText {
+    margin-top: 70px; }
+    .boxText h1 {
+      font-size: 22px; }
+
+  .boxBtns a {
+    margin-bottom: 10px; } }
+@media (min-width: 320px) and (max-width: 480px) {
+  #d-header {
+    height: 350px !important; }
+
+  .boxText {
+    margin-top: 70px; }
+    .boxText h1 {
+      font-size: 22px; }
+
+  .boxBtns a {
+    margin-bottom: 10px; }
+
+  .imgCar > img {
+    margin-top: 10%;
+    width: 350px !important; } }
+
+/*# sourceMappingURL=home.css.map */

@@ -1,0 +1,162 @@
+// ---------------------
+// Variables
+// ---------------------
+@import "includes/variables";
+
+
+// ---------------------
+// Default Styles
+// ---------------------
+@import "includes/defaultS";
+
+
+
+
+// -----------------------------
+// Header (nav bar + intro text)
+// -----------------------------
+@import "includes/header";
+#d-header{
+  background-image: url("../../images/backgrounds/bg-3.jpg") !important;
+}
+
+
+
+// --------------------------------
+// Advertiser (buttons + features)
+// --------------------------------
+$marginTop:40px;
+.fetaBox{
+  margin-top: $marginTop*2;
+}
+.fetaText{
+  margin-top: $marginTop;
+  h4{
+    font-weight: bold;
+    text-transform: capitalize;
+  }
+}
+
+
+// --------------------------------
+// the driver section
+// --------------------------------
+#theDriver{
+  background-color: $primary;
+  height: 500px;
+  margin-bottom: 0;
+  position: relative;
+  z-index: 99999;
+  .mainBox{
+    color: $white !important;
+    padding: 5% 0;
+    p{
+      color: $offWhite !important;
+    }
+  }
+  .imgCar{
+    >img{
+      width: 450px;
+    }
+  }
+}
+
+// --------------------------------
+// contact us
+// --------------------------------
+section#contact{
+  position: relative;
+  background-image: url("../../images/backgrounds/contact.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-attachment: fixed;
+  padding: 10% 0;
+  label{
+    color: $white !important;
+  }
+  .d-overlay{
+    opacity: .5;
+  }
+  .form-row>.col, .form-row>[class*=col-] {
+    padding-right: 20px;
+    padding-left: 20px;
+  }
+}
+.d-content-contact{
+  position: relative;
+  z-index: 99999;
+}
+.textContact{
+  margin-bottom: 5%;
+  h2{
+    text-transform: capitalize;
+    color: $white;
+  }
+}
+.btnForm{
+  margin-top: 10%;
+}
+
+
+// --------------------------------
+// Footer
+// --------------------------------
+@import "includes/footer";
+
+
+// --------------------------------
+// Responsive
+// --------------------------------
+
+
+//##Device = Low Resolution Tablets, Mobiles (Landscape)
+
+@media (min-width: 481px) and (max-width: 767px) {
+
+  #d-header {
+    height: 370px !important;
+  }
+  .boxText{
+    margin-top: 70px;
+    h1{
+      font-size: 22px;
+    }
+  }
+  .boxBtns{
+    a{
+      margin-bottom: 10px;
+    }
+  }
+}
+
+
+//##Device = Most of the Smartphones Mobiles (Portrait)
+
+
+@media (min-width: 320px) and (max-width: 480px) {
+
+  #d-header {
+    height: 350px !important;
+  }
+  .boxText{
+    margin-top: 70px;
+    h1{
+      font-size: 22px;
+    }
+  }
+  .boxBtns{
+    a{
+      margin-bottom: 10px;
+    }
+  }
+  .imgCar{
+    >img{
+      margin-top: 10%;
+      width: 350px !important;
+    }
+  }
+}
+
+
+

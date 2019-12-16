@@ -1,0 +1,111 @@
+include includes/variables
+include includes/mixins
+doctype
+html(lang="en")
+    head
+        include includes/meta
+        title The Driver
+        include includes/styles
+        link(rel="stylesheet", href="css/compiled/home.css")
+
+
+    body
+        //-header of page
+        header#d-header
+            //-the overlay
+            .d-overlay
+            //-nav bar
+            nav#theNav.navbar.navbar-expand-lg.fixed-top
+                .container
+                    a(href="#" target="_blank" class="navbar-brand") #{title.toUpperCase()}
+                    button(class="navbar-toggler" type="button" data-toggle="collapse" data-target="#theBar" aria-controls="theBar" aria-expanded="false" aria-label="Toggle navigation")
+                        span(class="fas fa-bars")
+                    #theBar.collapse.navbar-collapse
+                        ul.navbar-nav.ml-auto
+                            li.nav-item.active
+                                a(href="#", class="nav-link") Home
+                            li.nav-item
+                                a(href="#theDriver", class="nav-link") Earn Money
+                            li.nav-item
+                                a(href="#contact", class="nav-link") contact us
+            //-the intro header (text, buttons)
+            section#d-intro.text-center
+                .boxText
+                    h1 wrapped vehicle + audience insights = #{title}
+                .boxBtns
+                    a(href="#", class="btn btn-warning") Drive
+                    a(href="#", class="btn btn-light") advertiser
+
+
+
+        //-Advertiser
+        section#advertiser.theMagicMargin
+            .container
+                //-intro advertiser
+                +mainBox("advertiser","We believe in engaging passengers.","not annoying them","let's talk","btn-outline-warning","#")
+                //- features
+                .features
+                    .row
+                        +fetaBox("icon1.svg","your brand","Wrapped vehicles with your branding")
+                        +fetaBox("icon2.svg","rideshare drivers","rideshare drivers drive thousands of miles")
+                        +fetaBox("icon3.svg","tracking","we track every impression your wraps got through our proprietary IOT impression tracking hardware real time")
+                        +fetaBox("icon4.svg","dashboard","we analyze and process these impressions and create deep-insights into your audience including demographics and consumer behavior")
+
+
+
+        //-Driver
+        section#theDriver.theMagicMargin
+            .container
+                //-intro driver section
+                +mainBox("driver","Earn up to 500$ ","/ month","make money","btn-outline-dark","#")
+
+                .theCars.d-flex.justify-content-center
+                    .imgCar
+                        img(src="images/cars/front.png", alt="brand", class="img-fluid")
+
+
+
+        //-Contact Us
+        section#contact
+            .d-overlay
+            .d-content-contact
+                .textContact.text-center
+                    h2 contact us
+
+                form.contact-form
+                    .container
+                        .form-row
+                            +formInputsGenerate("text","firstName","first name")
+                            +formInputsGenerate("text","LastName","last name")
+                            +formInputsGenerate("text","jobTitle","job title")
+                            +formInputsGenerate("text","companyName","company name")
+                            +formInputsGenerate("email","theEmail","email")
+                            +formInputsGenerate("number","phoneNumber","phone number")
+                        .btnForm.text-center
+                            button(type="submit" class="btn btn-warning") submit
+                                i(class="fas fa-paper-plane")
+
+
+        //-Footer (end page)
+        +theEndFooter()
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        //-scripts
+        include includes/scripts
+        script(src="js/home.js")
+
+
+
+
